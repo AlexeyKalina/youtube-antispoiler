@@ -1,0 +1,4 @@
+.html5-video-player.hide-controls .ytp-time-display,
+.html5-video-player.hide-controls .ytp-progress-bar-container {
+    display: none;
+}

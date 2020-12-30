@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "YouTube AntiSpoiler",
+    "version": "1.0",
+    "description": "Hide time display and progress bar for some videos on YouTube",
+    "browser_action": {
+        "default_title": "YouTube AntiSpoiler",
+        "default_popup": "popup/popup.html"
+    },
+    "content_scripts": [
+        {
+            "all_frames": true,
+            "css": [
+                "styles.css"
+            ],
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "js": [
+                "youtube-antispoiler.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "storage"
+    ]
+}
