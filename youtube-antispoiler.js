@@ -8,7 +8,7 @@ function updatePlayer(title) {
         if (result.spoilerTitles != null) {
             spoilerTitles = result.spoilerTitles;
         }
-        if (spoilerTitles.some(x => title.toLowerCase().includes(x.toLowerCase()))) {
+        if (spoilerTitles.some(x => x.toLowerCase().split(' ').every(w => title.toLowerCase().includes(w)))) {
             player.classList.add(hideControlsClass);
         } else {
             player.classList.remove(hideControlsClass);

@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
     "name": "YouTube AntiSpoiler",
-    "version": "1.0",
-    "description": "Hide time display and progress bar for YouTube videos matching by title",
+    "version": "1.1",
+    "description": "Hide time display and progress bar for YouTube videos matching by words in title",
     "icons": {
         "48": "icon.svg",
         "96": "icon.svg"
